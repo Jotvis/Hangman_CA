@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+}
+#gallows {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 60%;
+    background-color: moccasin;
+}
+.gallows {
+    background-color: brown;
+    position: absolute;
+    /*transform: translate(-50%, 0);*/
+}
+#one {
+    bottom: 20px;
+    left: 20%;
+    width: 500px;
+    height: 5px;
+}
+#two {
+    width: 5px;
+    height: 300px;
+    bottom: 20px;
+    left: 40%;
+}
+#three {
+    bottom: 320px;
+    left: 40%;
+    width: 200px;
+    height: 5px;
+}
+#four {
+    bottom: 260px;
+    left: 55%;
+    width: 5px;
+    height: 50px;
+}
+#five {
+    border-radius: 50%;
+    bottom: 200px;
+    left: 53%;
+    width: 50px;
+    height: 50px;
+}
+#six {
+    bottom: 150px;
+    left: 55%;
+    width: 5px;
+    height: 100px;
+}
+#seven {
+    bottom: 155px;
+    left: 54%;
+    width: 5px;
+    height: 50px;
+    transform: rotate(30deg);
+}
+#eight {
+    bottom: 155px;
+    left: 56%;
+    width: 5px;
+    height: 50px;
+    transform: rotate(-30deg);
+}
+#nine {
+    bottom: 110px;
+    left: 54%;
+    width: 5px;
+    height: 50px;
+    transform: rotate(30deg);
+}
+#ten {
+    bottom: 110px;
+    left: 56%;
+    width: 5px;
+    height: 50px;
+    transform: rotate(-30deg);
+}
+
+
+#word {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: darkseagreen;
+}
