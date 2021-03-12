@@ -1,4 +1,8 @@
 * {
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: Rubik;
+    font-size: 50px;
     padding: 0;
     margin: 0;
 }
@@ -7,12 +11,20 @@
     height: 100vh;
     background-color: pink;
 }
+.flex {
+    display: flex;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #gallows {
     position: relative;
     margin: auto;
     padding: 20px;
     width: 80%;
-    height: 60%;
+    height: 50%;
     background-color: moccasin;
 }
 .gallows {
@@ -31,18 +43,21 @@
     height: 300px;
     bottom: 20px;
     left: 40%;
+    display: none;
 }
 #three {
     bottom: 320px;
     left: 40%;
     width: 200px;
     height: 5px;
+    display: none;
 }
 #four {
     bottom: 260px;
     left: 55%;
     width: 5px;
     height: 50px;
+    display: none;
 }
 #five {
     border-radius: 50%;
@@ -50,12 +65,14 @@
     left: 53%;
     width: 50px;
     height: 50px;
+    display: none;
 }
 #six {
     bottom: 150px;
     left: 55%;
     width: 5px;
     height: 100px;
+    display: none;
 }
 #seven {
     bottom: 155px;
@@ -63,6 +80,7 @@
     width: 5px;
     height: 50px;
     transform: rotate(30deg);
+    display: none;
 }
 #eight {
     bottom: 155px;
@@ -70,6 +88,7 @@
     width: 5px;
     height: 50px;
     transform: rotate(-30deg);
+    display: none;
 }
 #nine {
     bottom: 110px;
@@ -77,6 +96,7 @@
     width: 5px;
     height: 50px;
     transform: rotate(30deg);
+    display: none;
 }
 #ten {
     bottom: 110px;
@@ -84,11 +104,47 @@
     width: 5px;
     height: 50px;
     transform: rotate(-30deg);
+    display: none;
 }
 
+#display {
+    width: 100%;
+    height: 50px;
+    display: block;
+    text-align: center;
+}
 
 #word {
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+    height: 100px;
     padding: 20px;
     margin: 20px auto;
     background-color: darkseagreen;
+}
+#guesser {
+
+}
+#letter {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+}
+#letter::placeholder {
+    font-size: 18px;
+    text-align: center;
+}
+#button {
+    margin: 10px auto 30px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: brown;
+    cursor: pointer;
+    transition: .3s;
+}
+#button:hover {
+    transform: scale(1.2);
 }
