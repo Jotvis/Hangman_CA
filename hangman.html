@@ -13,6 +13,7 @@
 <div id="main" class="flex-col">
 
     <div id="gallows">
+        <div id="ground" class=""></div>
         <div id="one" class="gallows"></div>
         <div id="two" class="gallows"></div>
         <div id="three" class="gallows"></div>
@@ -22,21 +23,19 @@
         <div id="seven" class="gallows"></div>
         <div id="eight" class="gallows"></div>
         <div id="nine" class="gallows"></div>
-        <div id="ten" class="gallows"></div>
     </div>
 
-    <div id="display">
-        YOU WIN!
-    </div>
+    <div id="displayMsg"></div>
 
-    <div id="word">
-      ' '
-    </div>
+    <div id="definition"></div>
 
-    <div id="guesser" class="flex-col">
-        <input type="text" placeholder="Letter" id="letter" maxlength="1">
-        <div id="button">GUESS</div>
-    </div>
+    <div id="word" class="flex"></div>
+
+    <form id="guesser" class="flex-col">
+        <label for="letterInput" style="display: none"></label>
+        <input type="text" placeholder="Letter" id="letterInput" maxlength="1" required />
+        <input type="button" id="button" value="GUESS">
+    </form>
 
 </div>
 </body>

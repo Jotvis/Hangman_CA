@@ -23,97 +23,103 @@
     position: relative;
     margin: auto;
     padding: 20px;
+    min-height: 200px;
+    min-width: 350px;
+    max-width: 600px;
+    max-height: 400px;
     width: 80%;
-    height: 50%;
+    height: 40%;
     background-color: moccasin;
 }
 .gallows {
     background-color: brown;
     position: absolute;
     /*transform: translate(-50%, 0);*/
+    /*display: none;*/
+}
+#ground {
+    bottom: 5%;
+    left: 10%;
+    width: 80%;
+    height: 5px;
+    background-color: brown;
+    position: absolute;
 }
 #one {
-    bottom: 20px;
-    left: 20%;
-    width: 500px;
-    height: 5px;
+    width: 5px;
+    height: 80%;
+    bottom: 5%;
+    left: 40%;
+    /*display: none;*/
 }
 #two {
-    width: 5px;
-    height: 300px;
-    bottom: 20px;
+    bottom: 85%;
     left: 40%;
-    display: none;
+    width: 20%;
+    height: 5px;
+    /*display: none;*/
 }
 #three {
-    bottom: 320px;
-    left: 40%;
-    width: 200px;
-    height: 5px;
-    display: none;
+    top: 16%;
+    left: 55%;
+    width: 5px;
+    height: 15%;
+    /*display: none;*/
 }
 #four {
-    bottom: 260px;
-    left: 55%;
-    width: 5px;
-    height: 50px;
-    display: none;
+    border-radius: 50%;
+    top: 32%;
+    left: 52.5%;
+    width: 40px;
+    height: 40px;
+    /*display: none;*/
 }
 #five {
-    border-radius: 50%;
-    bottom: 200px;
-    left: 53%;
-    width: 50px;
-    height: 50px;
-    display: none;
-}
-#six {
-    bottom: 150px;
+    top: calc(33% + 40px);
     left: 55%;
     width: 5px;
-    height: 100px;
-    display: none;
+    height: 20%;
+    /*display: none;*/
+}
+#six {
+    top: calc(53% + 40px);
+    left: 52.5%;
+    width: 5px;
+    height: 15%;
+    transform: rotate(30deg);
+    /*display: none;*/
 }
 #seven {
-    bottom: 155px;
-    left: 54%;
+    top: calc(53% + 40px);
+    left: 57.5%;
     width: 5px;
-    height: 50px;
-    transform: rotate(30deg);
-    display: none;
+    height: 15%;
+    transform: rotate(-30deg);
+    /*display: none;*/
 }
 #eight {
-    bottom: 155px;
-    left: 56%;
+    top: calc(33% + 40px);
+    left: 52.5%;
     width: 5px;
-    height: 50px;
-    transform: rotate(-30deg);
-    display: none;
+    height: 15%;
+    transform: rotate(30deg);
+    /*display: none;*/
 }
 #nine {
-    bottom: 110px;
-    left: 54%;
+    top: calc(33% + 40px);
+    left: 57.5%;
     width: 5px;
-    height: 50px;
-    transform: rotate(30deg);
-    display: none;
-}
-#ten {
-    bottom: 110px;
-    left: 56%;
-    width: 5px;
-    height: 50px;
+    height: 15%;
     transform: rotate(-30deg);
-    display: none;
+    /*display: none;*/
 }
-
-#display {
+#displayMsg {
     width: 100%;
     height: 50px;
-    display: block;
+    color: brown;
+    /*display: unset;*/
     text-align: center;
 }
-
 #word {
     justify-content: center;
     text-align: center;
@@ -121,19 +127,27 @@
     width: 100%;
     height: 100px;
     padding: 20px;
-    margin: 20px auto;
+    margin: 10px auto;
     background-color: darkseagreen;
 }
-#guesser {
-
+#definition {
+    margin-top: 10px;
+    min-height: 10%;
+    width: 80%;
+    background-color: sandybrown;
+    font-size: 25px;
+    text-align: center;
 }
-#letter {
+.letter {
+    margin: 10px;
+}
+#letterInput {
     text-align: center;
     width: 70px;
     height: 70px;
     padding: 5px;
 }
-#letter::placeholder {
+#letterInput::placeholder {
     font-size: 18px;
     text-align: center;
 }
@@ -144,6 +158,7 @@
     background-color: brown;
     cursor: pointer;
     transition: .3s;
+    outline: none;
 }
 #button:hover {
     transform: scale(1.2);
