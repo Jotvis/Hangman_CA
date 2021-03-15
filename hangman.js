@@ -67,7 +67,7 @@ async function startGame () {
         }
         console.log("mis6: " + mistakeCounter)
         if (mistakeCounter > 8) {
-            def.innerText = word
+            def.innerText += ` - ${word}`
             displayMsg.innerText = "GAME OVER!"
             button.value = "RESTART"
             button.removeEventListener("click", passLetter, true)
@@ -86,7 +86,7 @@ async function startGame () {
 
 
 function getWord () {
-    return fetch("https://random-words-api.vercel.app/word")
+    return fetch("https://san-random-words.vercel.app/") // IF NOT WORKING TRY TO CHANGE TO: https://random-words-api.vercel.app/word
         .then (res => res.json())
         .then(data => {
             console.log(data)
